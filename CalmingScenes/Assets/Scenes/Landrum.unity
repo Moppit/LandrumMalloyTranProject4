@@ -170,7 +170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13424758}
   m_LocalRotation: {x: -0.10217002, y: 0.08166254, z: -0.7306741, w: 0.67008054}
-  m_LocalPosition: {x: -10.900125, y: 74.59896, z: 33.102615}
+  m_LocalPosition: {x: -11.05, y: 75.11, z: 33.102615}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 993458707}
@@ -560,11 +560,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 462066, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
   m_PrefabInstance: {fileID: 158925066}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &158925068 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4471613377008970, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
-  m_PrefabInstance: {fileID: 158925066}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &158925070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 134650, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
@@ -591,7 +586,7 @@ MonoBehaviour:
   grabEnd: 0.35
   m_parentHeldObject: 1
   m_moveHandPosition: 0
-  m_gripTransform: {fileID: 158925068}
+  m_gripTransform: {fileID: 1785845926}
   m_grabVolumes: []
   m_controller: 2
   m_parentTransform: {fileID: 0}
@@ -16274,7 +16269,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 125, z: 125}
+  m_Size: {x: 10, y: 110, z: 110}
   m_Center: {x: 0, y: -6, z: 40}
 --- !u!82 &1126345440
 AudioSource:
@@ -16287,7 +16282,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 65f8c30b54ca9ca449c515d375d59655, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -16372,6 +16367,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1126345441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126345437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2ac78929d89024d805ff43ded52a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1126345442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126345437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a9997e15221bdd488d8cd04aa959c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1150976172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: ce58d6214b054b54db324aa279f8e944, type: 3}
@@ -16524,7 +16543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346004495}
   m_LocalRotation: {x: -0.10217002, y: 0.08166254, z: -0.7306741, w: 0.67008054}
-  m_LocalPosition: {x: -9.700005, y: 70.60103, z: 32.19736}
+  m_LocalPosition: {x: -9.31, y: 69.29, z: 32.19736}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 993458707}
@@ -16783,7 +16802,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9dc2ddcfe0148194da0467efda85cfa0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -26889,6 +26908,11 @@ Transform:
   m_Father: {fileID: 1841674958}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1785845926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4471613377008970, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  m_PrefabInstance: {fileID: 158925066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1806695435
 GameObject:
   m_ObjectHideFlags: 0
@@ -41636,6 +41660,7 @@ GameObject:
   - component: {fileID: 2000236342}
   - component: {fileID: 2000236344}
   - component: {fileID: 2000236343}
+  - component: {fileID: 2000236345}
   m_Layer: 0
   m_Name: Mallet
   m_TagString: Untagged
@@ -41691,6 +41716,20 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!136 &2000236345
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000236341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.25
+  m_Height: 4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2013961897
 PrefabInstance:
   m_ObjectHideFlags: 0
