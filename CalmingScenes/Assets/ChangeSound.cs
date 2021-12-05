@@ -22,10 +22,16 @@ public class ChangeSound : MonoBehaviour
     {
         // change which sound is playing
         if(toggle) {
-            crickets.Play();
+            if(!crickets.isPlaying) {
+                crickets.Play();
+                guide.Stop();
+            }
         }
         else {
-            guide.Play();
+            if(!guide.isPlaying) {
+                guide.Play();
+                crickets.Stop();
+            }
         }
 
         // Check if you need to toggle
