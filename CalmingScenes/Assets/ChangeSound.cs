@@ -14,14 +14,14 @@ public class ChangeSound : MonoBehaviour
     {
         crickets.Stop();
         guide.Stop();
-        toggle = true;
+        toggle = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         // change which sound is playing
-        if(toggle) {
+        if(!toggle) {
             if(!crickets.isPlaying) {
                 crickets.Play();
                 guide.Stop();
@@ -34,9 +34,12 @@ public class ChangeSound : MonoBehaviour
             }
         }
 
-        // Check if you need to toggle
-        if(Input.GetKeyDown("space")) {
-            toggle = !toggle;
+        // Toggle on Oculus button press
+        if(OVRInput.GetDown(OVRInput.Button.One)) {
+            toggle = true;
+        }
+        if(OVRInput.GetDown(OVRInput.Button.Two)) {
+            toggle = false;
         }
     }
 }
