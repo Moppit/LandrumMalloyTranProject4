@@ -623,7 +623,8 @@ MonoBehaviour:
   m_parentHeldObject: 1
   m_moveHandPosition: 0
   m_gripTransform: {fileID: 1785845926}
-  m_grabVolumes: []
+  m_grabVolumes:
+  - {fileID: 158925076}
   m_controller: 2
   m_parentTransform: {fileID: 0}
   m_player: {fileID: 0}
@@ -659,8 +660,9 @@ MonoBehaviour:
   grabEnd: 0.35
   m_parentHeldObject: 1
   m_moveHandPosition: 0
-  m_gripTransform: {fileID: 0}
-  m_grabVolumes: []
+  m_gripTransform: {fileID: 736172924}
+  m_grabVolumes:
+  - {fileID: 158925077}
   m_controller: 1
   m_parentTransform: {fileID: 0}
   m_player: {fileID: 0}
@@ -680,6 +682,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &158925076
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158925070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &158925077
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158925071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &209058327 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: ce58d6214b054b54db324aa279f8e944, type: 3}
@@ -16092,6 +16120,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!4 &736172924 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4188412984752900, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  m_PrefabInstance: {fileID: 158925066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &803767027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 30be9383d647a9f43bae5680e8b65d3c, type: 3}
