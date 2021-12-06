@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Landrum.unity
+    guid: 715b84765fc8b4344abf44c0788b1b9b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: fd17990673f3ad041af02ea0c6568d90, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 45b6618109db1004d9c449084b864a21, type: 2}
