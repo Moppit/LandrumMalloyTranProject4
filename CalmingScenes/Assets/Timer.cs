@@ -40,14 +40,26 @@ public class Timer : MonoBehaviour
                 timer -= Time.deltaTime; //doesn't seem to work with Time.deltaTime??
                 //timer -= 1;   //this works, but is too fast??
                 //print("running!");
-                if(timer == 0)
+                // if(timer == 0)
+                // {
+                //     print("Inside timer if statement!");
+                //     //timeText_1.enabled = false;
+                //     //timeText_2.enabled = true;
+                //     timeText_1.gameObject.SetActive(false);
+                //     timeText_2.gameObject.SetActive(true);
+                //     timer = 1000;
+                // }
+                if(timeText_1.gameObject.activeSelf == true)
                 {
-                    print("Inside timer if statement!");
-                    //timeText_1.enabled = false;
-                    //timeText_2.enabled = true;
-                    timeText_1.gameObject.SetActive(false);
-                    timeText_2.gameObject.SetActive(true);
-                    timer = 1000;
+                    //while(true)
+                    //{
+                        timeText_1.gameObject.SetActive(true);
+                        StartCoroutine(waiter());
+                        timeText_1.gameObject.SetActive(false);
+                        StartCoroutine(waiter());
+                        timeText_2.gameObject.SetActive(true);
+                        StartCoroutine(waiter());
+                    //}
                 }
                 //DisplayTime(timeRemaining);
             }
@@ -59,7 +71,11 @@ public class Timer : MonoBehaviour
             }
         }
     }
-
+    IEnumerator waiter()
+    {
+        //Wait for 10 seconds
+        yield return new WaitForSeconds(10);
+    }
     // void DisplayTime(float timeToDisplay)
     // {
     //     if(timeToDisplay < 0)
