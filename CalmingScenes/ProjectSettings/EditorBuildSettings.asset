@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tran.unity
+    guid: 8dce9550aad54104ca6f95234080f7fc
   - enabled: 0
     path: Assets/Scenes/Landrum.unity
     guid: 715b84765fc8b4344abf44c0788b1b9b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Malloy.unity
     guid: 21f5fa398e7d6fb4f892ec47233847f4
   m_configObjects:
