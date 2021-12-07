@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeSound : MonoBehaviour
 {
@@ -40,6 +41,11 @@ public class ChangeSound : MonoBehaviour
         }
         if(OVRInput.GetDown(OVRInput.Button.Two)) {
             toggle = false;
+        }
+
+        // Additional function that should probably be in a different file but is here bc idk where else to put it
+        if(OVRInput.GetDown(OVRInput.Button.Three)) {
+            SceneManager.LoadScene("Menu");
         }
     }
 }
