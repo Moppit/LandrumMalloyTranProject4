@@ -16,3 +16,5 @@ Go to `Menu.unity` and run using an Oculus Quest 2. You should be able to select
 For details about project decision reasoning, storyboarding, etc., please see our Google Doc containing all this info: https://docs.google.com/document/d/1CFyx-Hxp6lI0bOcISGtnFd8QREGro2sXpVtpzoyNmNk/edit?usp=sharing
 
 The PDF is also included in this folder.
+
+As for our video, we will submit it separately from our .zip file for uploading time purposes. Here's the link as well: https://drive.google.com/file/d/1SUSfXhgJeGUQ6RMlp7ZOP-Ot0V5C-seZ/view?usp=sharing 
